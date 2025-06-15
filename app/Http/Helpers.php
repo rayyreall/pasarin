@@ -34,7 +34,7 @@ class Helper
 ?>
 
             <li>
-                <a href="javascript:void(0);">Category<i class="ti-angle-down"></i></a>
+                <a href="javascript:void(0);">Kategori<i class="ti-angle-down"></i></a>
                 <ul class="dropdown border-0 shadow">
                     <?php
                     foreach ($menu as $cat_info) {
@@ -207,6 +207,21 @@ if (!function_exists('generateUniqueSlug')) {
         }
 
         return $slug;
+    }
+}
+if (!function_exists('format_date_indo')) {
+    function format_date_indo($tanggal)
+    {
+
+        setlocale(LC_TIME, 'id_ID.UTF-8');
+        return \Carbon\Carbon::parse($tanggal)->translatedFormat('d F Y H:i');
+    }
+}
+
+if (!function_exists('format_rupiah')) {
+    function format_rupiah($nilai)
+    {
+        return 'Rp ' . number_format($nilai, 0, ',', '.');
     }
 }
 

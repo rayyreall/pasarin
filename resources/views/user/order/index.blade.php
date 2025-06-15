@@ -9,7 +9,7 @@
          </div>
      </div>
     <div class="card-header py-3">
-      <h6 class="m-0 font-weight-bold text-primary float-left">Order Lists</h6>
+      <h6 class="m-0 font-weight-bold text-primary float-left">Daftar Pesanan</h6>
     </div>
     <div class="card-body">
       <div class="table-responsive">
@@ -17,28 +17,28 @@
         <table class="table table-bordered" id="order-dataTable" width="100%" cellspacing="0">
           <thead>
             <tr>
-              <th>S.N.</th>
-              <th>Order No.</th>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Quantity</th>
-              <th>Charge</th>
-              <th>Total Amount</th>
-              <th>Status</th>
-              <th>Action</th>
+                <th>No</th>
+                <th>No. Pesanan</th>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>Jumlah</th>
+                <th>Ongkir</th>
+                <th>Total Bayar</th>
+                <th>Status</th>
+                <th>Aksi</th>
             </tr>
           </thead>
           <tfoot>
             <tr>
-              <th>S.N.</th>
-              <th>Order No.</th>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Quantity</th>
-              <th>Charge</th>
-              <th>Total Amount</th>
-              <th>Status</th>
-              <th>Action</th>
+                <th>No</th>
+                <th>No. Pesanan</th>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>Jumlah</th>
+                <th>Ongkir</th>
+                <th>Total Bayar</th>
+                <th>Status</th>
+                <th>Aksi</th>
               </tr>
           </tfoot>
           <tbody>
@@ -49,17 +49,17 @@
                     <td>{{$order->first_name}} {{$order->last_name}}</td>
                     <td>{{$order->email}}</td>
                     <td>{{$order->quantity}}</td>
-                    <td>${{$order->shipping->price}}</td>
-                    <td>${{number_format($order->total_amount,2)}}</td>
+                    <td>{{format_rupiah($order->shipping->price)}}</td>
+                    <td>{{format_rupiah($order->total_amount)}}</td>
                     <td>
                         @if($order->status=='new')
-                          <span class="badge badge-primary">{{$order->status}}</span>
+                          <span class="badge badge-primary">Baru</span>
                         @elseif($order->status=='process')
-                          <span class="badge badge-warning">{{$order->status}}</span>
+                          <span class="badge badge-warning">Diproses</span>
                         @elseif($order->status=='delivered')
-                          <span class="badge badge-success">{{$order->status}}</span>
+                          <span class="badge badge-success">Terkirim</span>
                         @else
-                          <span class="badge badge-danger">{{$order->status}}</span>
+                          <span class="badge badge-danger">Dibatalkan</span>
                         @endif
                     </td>
                     <td>
@@ -76,7 +76,7 @@
         </table>
         <span style="float:right">{{$orders->links()}}</span>
         @else
-          <h6 class="text-center">No orders found!!! Please order some products</h6>
+          <h6 class="text-center">Tidak ada pesanan! Silakan lakukan pembelian terlebih dahulu.</h6>
         @endif
       </div>
     </div>

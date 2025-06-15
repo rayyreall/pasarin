@@ -15,20 +15,20 @@
 								$settings=DB::table('settings')->get();
 							@endphp
 							<p class="text">@foreach($settings as $data) {{$data->short_des}} @endforeach</p>
-							<p class="call">Got Question? Call us 24/7<span><a href="tel:123456789">@foreach($settings as $data) {{$data->phone}} @endforeach</a></span></p>
+							<p class="call">Ada pertanyaan? Hubungi kami 24/7<span><a href="tel:6283137290566">@foreach($settings as $data) {{$data->phone}} @endforeach</a></span></p>
 						</div>
 						<!-- End Single Widget -->
 					</div>
 					<div class="col-lg-2 col-md-6 col-12">
 						<!-- Single Widget -->
 						<div class="single-footer links">
-							<h4>Information</h4>
+							<h4>Informasi</h4>
 							<ul>
-								<li><a href="{{route('about-us')}}">About Us</a></li>
-								<li><a href="#">Faq</a></li>
-								<li><a href="#">Terms & Conditions</a></li>
-								<li><a href="{{route('contact')}}">Contact Us</a></li>
-								<li><a href="#">Help</a></li>
+                                <li><a href="{{route('about-us')}}">Tentang Kami</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Syarat & Ketentuan</a></li>
+                                <li><a href="{{route('contact')}}">Hubungi Kami</a></li>
+                                <li><a href="#">Bantuan</a></li>
 							</ul>
 						</div>
 						<!-- End Single Widget -->
@@ -36,13 +36,13 @@
 					<div class="col-lg-2 col-md-6 col-12">
 						<!-- Single Widget -->
 						<div class="single-footer links">
-							<h4>Customer Service</h4>
+							<h4>Layanan Pelanggan</h4>
 							<ul>
-								<li><a href="#">Payment Methods</a></li>
-								<li><a href="#">Money-back</a></li>
-								<li><a href="#">Returns</a></li>
-								<li><a href="#">Shipping</a></li>
-								<li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Metode Pembayaran</a></li>
+                                <li><a href="#">Uang Kembali</a></li>
+                                <li><a href="#">Pengembalian</a></li>
+                                <li><a href="#">Pengiriman</a></li>
+                                <li><a href="#">Kebijakan Privasi</a></li>
 							</ul>
 						</div>
 						<!-- End Single Widget -->
@@ -50,7 +50,7 @@
 					<div class="col-lg-3 col-md-6 col-12">
 						<!-- Single Widget -->
 						<div class="single-footer social">
-							<h4>Get In Tuch</h4>
+                            <h4>Hubungi Kami</h4>
 							<!-- Single Widget -->
 							<div class="contact">
 								<ul>
@@ -74,7 +74,7 @@
 					<div class="row">
 						<div class="col-lg-6 col-12">
 							<div class="left">
-								<p>Copyright © {{date('Y')}} <a href="https://github.com/Prajwal100" target="_blank">Prajwal Rai</a>  -  All Rights Reserved.</p>
+								<p>Hak Cipta © {{date('Y')}} <a href="https://github.com/{{ config('app.author_link') ?? 'username' }}" target="_blank">{{ config('app.author') ?? "Developer" }}</a> - Semua Hak Dilindungi.</p>
 							</div>
 						</div>
 						<div class="col-lg-6 col-12">
@@ -88,7 +88,7 @@
 		</div>
 	</footer>
 	<!-- /End Footer Area -->
- 
+
 	<!-- Jquery -->
     <script src="{{asset('frontend/js/jquery.min.js')}}"></script>
     <script src="{{asset('frontend/js/jquery-migrate-3.0.0.js')}}"></script>
@@ -125,7 +125,7 @@
 	<!-- Active JS -->
 	<script src="{{asset('frontend/js/active.js')}}"></script>
 
-	
+
 	@stack('scripts')
 	<script>
 		setTimeout(function(){

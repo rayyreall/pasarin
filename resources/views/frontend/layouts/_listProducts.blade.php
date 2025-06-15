@@ -12,18 +12,18 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-                                <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah Ke Wishlist</span></a>
+                                <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Bandingkan</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
                     <div class="product-content">
-                        <h3><a href="product-details.html">Women Hot Collection</a></h3>
+                        <h3><a href="product-details.html">Koleksi Terbaru Wanita</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp 249.000</span>
                         </div>
                     </div>
                 </div>
@@ -38,11 +38,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-                                <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah Ke Wishlist</span></a>
+                                <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Bandingkan</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah Ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -64,11 +64,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -91,11 +91,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -117,11 +117,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -144,11 +144,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -170,11 +170,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -197,11 +197,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -232,11 +232,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -258,11 +258,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -284,11 +284,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -311,11 +311,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -337,11 +337,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -364,11 +364,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -390,11 +390,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -417,11 +417,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -452,11 +452,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -478,11 +478,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -504,11 +504,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -531,11 +531,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -557,11 +557,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -584,11 +584,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -610,11 +610,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -637,11 +637,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -672,11 +672,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -698,11 +698,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -724,11 +724,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -751,11 +751,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -777,11 +777,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -804,11 +804,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -830,11 +830,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -857,11 +857,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -892,11 +892,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -918,11 +918,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -944,11 +944,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -971,11 +971,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -997,11 +997,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-                                <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
+                                <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Bandingkan</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -1024,11 +1024,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-                                <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
+                                <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Bandingkan</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -1050,11 +1050,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-                                <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
+                                <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Bandingkan</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -1077,11 +1077,11 @@
                         <div class="button-head">
                             <div class="product-action">
                                 <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-                                <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
+                                <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Bandingkan</span></a>
                             </div>
                             <div class="product-action-2">
-                                <a title="Add to cart" href="#">Add to cart</a>
+                                <a title="Tambah ke Keranjang" href="#">Tambah ke Keranjang</a>
                             </div>
                         </div>
                     </div>

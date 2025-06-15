@@ -14,7 +14,7 @@
 	<meta property="og:image" content="{{$product_detail->photo}}">
 	<meta property="og:description" content="{{$product_detail->description}}">
 @endsection
-@section('title','E-SHOP || PRODUCT DETAIL')
+@section('title', config('app.name') . ' || DETAIL PRODUK')
 @section('main-content')
 
 		<!-- Breadcrumbs -->
@@ -24,8 +24,8 @@
 					<div class="col-12">
 						<div class="bread-inner">
 							<ul class="bread-list">
-								<li><a href="{{route('home')}}">Home<i class="ti-arrow-right"></i></a></li>
-								<li class="active"><a href="">Shop Details</a></li>
+								<li><a href="{{route('home')}}">Beranda<i class="ti-arrow-right"></i></a></li>
+								<li class="active"><a href="">Detail Produk</a></li>
 							</ul>
 						</div>
 					</div>
@@ -33,11 +33,11 @@
 			</div>
 		</div>
 		<!-- End Breadcrumbs -->
-				
+
 		<!-- Shop Single -->
 		<section class="shop single section">
 					<div class="container">
-						<div class="row"> 
+						<div class="row">
 							<div class="col-12">
 								<div class="row">
 									<div class="col-lg-6 col-12">
@@ -46,7 +46,7 @@
 											<!-- Images slider -->
 											<div class="flexslider-thumbnails">
 												<ul class="slides">
-													@php 
+													@php
 														$photo=explode(',',$product_detail->photo);
 													// dd($photo);
 													@endphp
@@ -74,17 +74,17 @@
 															@for($i=1; $i<=5; $i++)
 																@if($rate>=$i)
 																	<li><i class="fa fa-star"></i></li>
-																@else 
+																@else
 																	<li><i class="fa fa-star-o"></i></li>
 																@endif
 															@endfor
 													</ul>
-													<a href="#" class="total-review">({{$product_detail['getReview']->count()}}) Review</a>
+													<a href="#" class="total-review">({{$product_detail['getReview']->count()}}) Ulasan</a>
                                                 </div>
-                                                @php 
+                                                @php
                                                     $after_discount=($product_detail->price-(($product_detail->price*$product_detail->discount)/100));
                                                 @endphp
-												<p class="price"><span class="discount">${{number_format($after_discount,2)}}</span><s>${{number_format($product_detail->price,2)}}</s> </p>
+												<p class="price"><span class="discount">{{format_rupiah($after_discount)}}</span><s>{{format_rupiah($product_detail->price)}}</s> </p>
 												<p class="description">{!!($product_detail->summary)!!}</p>
 											</div>
 											<!--/ End Description -->
@@ -102,9 +102,9 @@
 											<!-- Size -->
 											@if($product_detail->size)
 												<div class="size mt-4">
-													<h4>Size</h4>
+													<h4>Ukuran</h4>
 													<ul>
-														@php 
+														@php
 															$sizes=explode(',',$product_detail->size);
 															// dd($sizes);
 														@endphp
@@ -118,9 +118,9 @@
 											<!-- Product Buy -->
 											<div class="product-buy">
 												<form action="{{route('single-add-to-cart')}}" method="POST">
-													@csrf 
+													@csrf
 													<div class="quantity">
-														<h6>Quantity :</h6>
+														<h6>Jumlah :</h6>
 														<!-- Input Order -->
 														<div class="input-group">
 															<div class="button minus">
@@ -139,16 +139,16 @@
 													<!--/ End Input Order -->
 													</div>
 													<div class="add-to-cart mt-4">
-														<button type="submit" class="btn">Add to cart</button>
+														<button type="submit" class="btn">Tambahkan Ke Keranjang</button>
 														<a href="{{route('add-to-wishlist',$product_detail->slug)}}" class="btn min"><i class="ti-heart"></i></a>
 													</div>
 												</form>
 
-												<p class="cat">Category :<a href="{{route('product-cat',$product_detail->cat_info['slug'])}}">{{$product_detail->cat_info['title']}}</a></p>
+												<p class="cat">Kategori :<a href="{{route('product-cat',$product_detail->cat_info['slug'])}}">{{$product_detail->cat_info['title']}}</a></p>
 												@if($product_detail->sub_cat_info)
-												<p class="cat mt-1">Sub Category :<a href="{{route('product-sub-cat',[$product_detail->cat_info['slug'],$product_detail->sub_cat_info['slug']])}}">{{$product_detail->sub_cat_info['title']}}</a></p>
+												<p class="cat mt-1">Sub Kategori :<a href="{{route('product-sub-cat',[$product_detail->cat_info['slug'],$product_detail->sub_cat_info['slug']])}}">{{$product_detail->sub_cat_info['title']}}</a></p>
 												@endif
-												<p class="availability">Stock : @if($product_detail->stock>0)<span class="badge badge-success">{{$product_detail->stock}}</span>@else <span class="badge badge-danger">{{$product_detail->stock}}</span>  @endif</p>
+												<p class="availability">Stok : @if($product_detail->stock>0)<span class="badge badge-success">{{$product_detail->stock}}</span>@else <span class="badge badge-danger">{{$product_detail->stock}}</span>  @endif</p>
 											</div>
 											<!--/ End Product Buy -->
 										</div>
@@ -160,8 +160,8 @@
 											<div class="nav-main">
 												<!-- Tab Nav -->
 												<ul class="nav nav-tabs" id="myTab" role="tablist">
-													<li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#description" role="tab">Description</a></li>
-													<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#reviews" role="tab">Reviews</a></li>
+													<li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#description" role="tab">Deskripsi</a></li>
+													<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#reviews" role="tab">Ulasan</a></li>
 												</ul>
 												<!--/ End Tab Nav -->
 											</div>
@@ -184,14 +184,14 @@
 													<div class="tab-single review-panel">
 														<div class="row">
 															<div class="col-12">
-																
+
 																<!-- Review -->
 																<div class="comment-review">
 																	<div class="add-review">
-																		<h5>Add A Review</h5>
-																		<p>Your email address will not be published. Required fields are marked</p>
+																		<h5>Tambahkan Ulasan</h5>
+																		<p>Email Anda tidak akan dipublikasikan. Bidang yang wajib diisi ditandai dengan tanda bintang (*)</p>
 																	</div>
-																	<h4>Your Rating <span class="text-danger">*</span></h4>
+																	<h4>Penilaian Anda <span class="text-danger">*</span></h4>
 																	<div class="review-inner">
 																			<!-- Form -->
 																@auth
@@ -221,37 +221,37 @@
                                                                         </div>
 																		<div class="col-lg-12 col-12">
 																			<div class="form-group">
-																				<label>Write a review</label>
+																				<label>Tulis ulasan</label>
 																				<textarea name="review" rows="6" placeholder="" ></textarea>
 																			</div>
 																		</div>
 																		<div class="col-lg-12 col-12">
-																			<div class="form-group button5">	
-																				<button type="submit" class="btn">Submit</button>
+																			<div class="form-group button5">
+																				<button type="submit" class="btn">Kirim</button>
 																			</div>
 																		</div>
 																	</div>
 																</form>
-																@else 
+																@else
 																<p class="text-center p-5">
-																	You need to <a href="{{route('login.form')}}" style="color:rgb(54, 54, 204)">Login</a> OR <a style="color:blue" href="{{route('register.form')}}">Register</a>
+                                                                    Anda harus <a href="{{route('login.form')}}" style="color:rgb(54, 54, 204)">Login</a> atau <a style="color:blue" href="{{route('register.form')}}">Register</a>
 
 																</p>
 																<!--/ End Form -->
 																@endauth
 																	</div>
 																</div>
-															
+
 																<div class="ratting-main">
 																	<div class="avg-ratting">
-																		{{-- @php 
+																		{{-- @php
 																			$rate=0;
 																			foreach($product_detail->rate as $key=>$rate){
 																				$rate +=$rate
 																			}
 																		@endphp --}}
-																		<h4>{{ceil($product_detail->getReview->avg('rate'))}} <span>(Overall)</span></h4>
-																		<span>Based on {{$product_detail->getReview->count()}} Comments</span>
+																		<h4>{{ceil($product_detail->getReview->avg('rate'))}} <span>(Keseluruhan)</span></h4>
+																		<span>Berdasarkan {{$product_detail->getReview->count()}} ulasan</span>
 																	</div>
 																	@foreach($product_detail['getReview'] as $data)
 																	<!-- Single Rating -->
@@ -259,7 +259,7 @@
 																		<div class="rating-author">
 																			@if($data->user_info['photo'])
 																			<img src="{{$data->user_info['photo']}}" alt="{{$data->user_info['photo']}}">
-																			@else 
+																			@else
 																			<img src="{{asset('backend/img/avatar.png')}}" alt="Profile.jpg">
 																			@endif
 																		</div>
@@ -271,7 +271,7 @@
 																					@for($i=1; $i<=5; $i++)
 																						@if($data->rate>=$i)
 																							<li><i class="fa fa-star"></i></li>
-																						@else 
+																						@else
 																							<li><i class="fa fa-star-o"></i></li>
 																						@endif
 																					@endfor
@@ -284,9 +284,9 @@
 																	<!--/ End Single Rating -->
 																	@endforeach
 																</div>
-																
+
 																<!--/ End Review -->
-																
+
 															</div>
 														</div>
 													</div>
@@ -301,14 +301,14 @@
 					</div>
 		</section>
 		<!--/ End Shop Single -->
-		
+
 		<!-- Start Most Popular -->
 	<div class="product-area most-popular related-product section">
         <div class="container">
             <div class="row">
 				<div class="col-12">
 					<div class="section-title">
-						<h2>Related Products</h2>
+						<h2>Produk Terkait</h2>
 					</div>
 				</div>
             </div>
@@ -322,39 +322,39 @@
                                 <div class="single-product">
                                     <div class="product-img">
 										<a href="{{route('product-detail',$data->slug)}}">
-											@php 
+											@php
 												$photo=explode(',',$data->photo);
 											@endphp
                                             <img class="default-img" src="{{$photo[0]}}" alt="{{$photo[0]}}">
                                             <img class="hover-img" src="{{$photo[0]}}" alt="{{$photo[0]}}">
-                                            <span class="price-dec">{{$data->discount}} % Off</span>
+                                            <span class="price-dec">{{$data->discount}} % Diskon</span>
                                                                     {{-- <span class="out-of-stock">Hot</span> --}}
                                         </a>
                                         <div class="button-head">
                                             <div class="product-action">
                                                 <a data-toggle="modal" data-target="#modelExample" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-                                                <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
+                                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Tambah ke Wishlist</span></a>
+                                                <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Bandingkan Produk</span></a>
                                             </div>
                                             <div class="product-action-2">
-                                                <a title="Add to cart" href="#">Add to cart</a>
+                                                <a title="Add to cart" href="#">Tambah ke Keranjang</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="product-content">
                                         <h3><a href="{{route('product-detail',$data->slug)}}">{{$data->title}}</a></h3>
                                         <div class="product-price">
-                                            @php 
+                                            @php
                                                 $after_discount=($data->price-(($data->discount*$data->price)/100));
                                             @endphp
-                                            <span class="old">${{number_format($data->price,2)}}</span>
-                                            <span>${{number_format($after_discount,2)}}</span>
+                                            <span class="old">{{format_rupiah($data->price)}}</span>
+                                            <span>{{format_rupiah($after_discount)}}</span>
                                         </div>
-                                      
+
                                     </div>
                                 </div>
                                 <!-- End Single Product -->
-                                	
+
                             @endif
                         @endforeach
                     </div>
@@ -363,7 +363,7 @@
         </div>
     </div>
 	<!-- End Most Popular Area -->
-	
+
 
   <!-- Modal -->
   <div class="modal fade" id="modelExample" tabindex="-1" role="dialog">
@@ -396,7 +396,7 @@
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                         <div class="quickview-content">
-                            <h2>Flared Shift Dress</h2>
+                            <h2>Gaun Flared Shift</h2>
                             <div class="quickview-ratting-review">
                                 <div class="quickview-ratting-wrap">
                                     <div class="quickview-ratting">
@@ -406,34 +406,34 @@
                                         <i class="yellow fa fa-star"></i>
                                         <i class="fa fa-star"></i>
                                     </div>
-                                    <a href="#"> (1 customer review)</a>
+                                    <a href="#"> (1 ulasan pelanggan)</a>
                                 </div>
                                 <div class="quickview-stock">
-                                    <span><i class="fa fa-check-circle-o"></i> in stock</span>
+                                    <span><i class="fa fa-check-circle-o"></i> tersedia</span>
                                 </div>
                             </div>
-                            <h3>$29.00</h3>
+                            <h3>Rp 429.000</h3>
                             <div class="quickview-peragraph">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia iste laborum ad impedit pariatur esse optio tempora sint ullam autem deleniti nam in quos qui nemo ipsum numquam.</p>
+                                <p>Gaun Flared Shift ini terbuat dari bahan berkualitas tinggi yang ringan dan nyaman digunakan sepanjang hari. Desainnya yang elegan dengan potongan longgar memberikan kesan anggun sekaligus santai. Cocok dikenakan untuk acara formal maupun kasual.</p>
                             </div>
                             <div class="size">
                                 <div class="row">
                                     <div class="col-lg-6 col-12">
-                                        <h5 class="title">Size</h5>
+                                        <h5 class="title">Ukuran</h5>
                                         <select>
-                                            <option selected="selected">s</option>
-                                            <option>m</option>
-                                            <option>l</option>
-                                            <option>xl</option>
+                                            <option selected="selected">S</option>
+                                            <option>M</option>
+                                            <option>L</option>
+                                            <option>XL</option>
                                         </select>
                                     </div>
                                     <div class="col-lg-6 col-12">
-                                        <h5 class="title">Color</h5>
+                                        <h5 class="title">Warna</h5>
                                         <select>
-                                            <option selected="selected">orange</option>
-                                            <option>purple</option>
-                                            <option>black</option>
-                                            <option>pink</option>
+                                            <option selected="selected">Oranye</option>
+                                            <option>Ungu</option>
+                                            <option>Hitam</option>
+                                            <option>Merah Muda</option>
                                         </select>
                                     </div>
                                 </div>
@@ -456,12 +456,12 @@
                                 <!--/ End Input Order -->
                             </div>
                             <div class="add-to-cart">
-                                <a href="#" class="btn">Add to cart</a>
+                                <a href="#" class="btn">Tambah ke Keranjang</a>
                                 <a href="#" class="btn min"><i class="ti-heart"></i></a>
                                 <a href="#" class="btn min"><i class="fa fa-compress"></i></a>
                             </div>
                             <div class="default-social">
-                                <h4 class="share-now">Share:</h4>
+                                <h4 class="share-now">Bagikan:</h4>
                                 <ul>
                                     <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
                                     <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>

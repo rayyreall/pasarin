@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Order @if($order)- {{$order->order_number}} @endif</title>
+  <title>Pesanan @if($order)- {{$order->order_number}} @endif</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
@@ -76,50 +76,50 @@
     <div class="float-right site-address">
       <h4>{{env('APP_NAME')}}</h4>
       <p>{{env('APP_ADDRESS')}}</p>
-      <p>Phone: <a href="tel:{{env('APP_PHONE')}}">{{env('APP_PHONE')}}</a></p>
+      <p>Telepon: <a href="tel:{{env('APP_PHONE')}}">{{env('APP_PHONE')}}</a></p>
       <p>Email: <a href="mailto:{{env('APP_EMAIL')}}">{{env('APP_EMAIL')}}</a></p>
     </div>
     <div class="clearfix"></div>
   </div>
   <div class="invoice-description">
     <div class="invoice-left-top float-left">
-      <h6>Invoice to</h6>
+      <h6>Tagihan Kepada</h6>
        <h3>{{$order->first_name}} {{$order->last_name}}</h3>
        <div class="address">
         <p>
-          <strong>Country: </strong>
+          <strong>Negara: </strong>
           {{$order->country}}
         </p>
         <p>
-          <strong>Address: </strong>
-          {{ $order->address1 }} OR {{ $order->address2}}
+          <strong>Alamat: </strong>
+          {{ $order->address1 }} / {{ $order->address2}}
         </p>
-         <p><strong>Phone:</strong> {{ $order->phone }}</p>
+         <p><strong>Telepon:</strong> {{ $order->phone }}</p>
          <p><strong>Email:</strong> {{ $order->email }}</p>
        </div>
     </div>
     <div class="invoice-right-top float-right" class="text-right">
-      <h3>Invoice #{{$order->order_number}}</h3>
-      <p>{{ $order->created_at->format('D d m Y') }}</p>
+      <h3>Faktur #{{$order->order_number}}</h3>
+      <p>{{ format_tanggal_indo($order->created_at) }}</p>
       {{-- <img class="img-responsive" src="data:image/png;base64, {{ base64_encode(QrCode::format('png')->size(150)->generate(route('admin.product.order.show', $order->id )))}}"> --}}
     </div>
     <div class="clearfix"></div>
   </div>
   <section class="order_details pt-3">
     <div class="table-header">
-      <h5>Order Details</h5>
+      <h5>Rincian Pesanan</h5>
     </div>
     <table class="table table-bordered table-stripe">
       <thead>
         <tr>
-          <th scope="col" class="col-6">Product</th>
-          <th scope="col" class="col-3">Quantity</th>
+          <th scope="col" class="col-6">Produk</th>
+          <th scope="col" class="col-3">Jumlah</th>
           <th scope="col" class="col-3">Total</th>
         </tr>
       </thead>
       <tbody>
       @foreach($order->cart_info as $cart)
-      @php 
+      @php
         $product=DB::table('products')->select('title')->where('id',$cart->product_id)->get();
       @endphp
         <tr>
@@ -129,7 +129,7 @@
               @endforeach
             </span></td>
           <td>x{{$cart->quantity}}</td>
-          <td><span>${{number_format($cart->price,2)}}</span></td>
+          <td><span>{{format_rupiah($cart->priceW)}}</span></td>
         </tr>
       @endforeach
       </tbody>
@@ -137,7 +137,7 @@
         <tr>
           <th scope="col" class="empty"></th>
           <th scope="col" class="text-right">Subtotal:</th>
-          <th scope="col"> <span>${{number_format($order->sub_total,2)}}</span></th>
+          <th scope="col"> <span>${{format_rupiah($order->sub_total)}}</span></th>
         </tr>
       {{-- @if(!empty($order->coupon))
         <tr>
@@ -151,15 +151,15 @@
           @php
             $shipping_charge=DB::table('shippings')->where('id',$order->shipping_id)->pluck('price');
           @endphp
-          <th scope="col" class="text-right ">Shipping:</th>
-          <th><span>${{number_format($shipping_charge[0],2)}}</span></th>
+          <th scope="col" class="text-right ">Ongkos Kirim:</th>
+          <th><span>{{format_rupiah($shipping_charge[0],2)}}</span></th>
         </tr>
         <tr>
           <th scope="col" class="empty"></th>
-          <th scope="col" class="text-right">Total:</th>
+          <th scope="col" class="text-right">Jumlah Total:</th>
           <th>
             <span>
-                ${{number_format($order->total_amount,2)}}
+                {{format_rupiah($order->total_amount)}}
             </span>
           </th>
         </tr>
@@ -167,15 +167,15 @@
     </table>
   </section>
   <div class="thanks mt-3">
-    <h4>Thank you for your business !!</h4>
+    <h4>Terima kasih atas kepercayaan Anda!</h4>
   </div>
   <div class="authority float-right mt-5">
     <p>-----------------------------------</p>
-    <h5>Authority Signature:</h5>
+    <h5>Tanda Tangan Otoritas: </h5>
   </div>
   <div class="clearfix"></div>
 @else
-  <h5 class="text-danger">Invalid</h5>
+  <h5 class="text-danger">Data Tidak Valid</h5>
 @endif
 </body>
 </html>

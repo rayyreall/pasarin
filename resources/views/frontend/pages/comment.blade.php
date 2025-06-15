@@ -6,17 +6,17 @@
         <div class="single-comment">
             @if($comment->user_info['photo'])
                 <img src="{{$comment->user_info['photo']}}" alt="#">
-            @else 
+            @else
                 <img src="{{asset('backend/img/avatar.png')}}" alt="">
             @endif
             <div class="content">
                 {{-- {{$post}} --}}
-            <h4>{{$comment->user_info['name']}} <span>At {{$comment->created_at->format('g: i a')}} On {{$comment->created_at->format('M d Y')}}</span></h4>
+            <h4>{{$comment->user_info['name']}} <span>Pada {{$comment->created_at->format('g: i a')}} WIB, {{$comment->created_at->format('M d Y')}}</span></h4>
                 <p>{{$comment->comment}}</p>
                 @if($dep)
                 <div class="button">
-                    <a href="#" class="btn btn-reply reply" data-id="{{$comment->id}}"><i class="fa fa-reply" aria-hidden="true"></i>Reply</a>
-                    <a href="" class="btn btn-reply cancel" style="display: none;" ><i class="fa fa-trash" aria-hidden="true"></i>Cancel</a>
+                    <a href="#" class="btn btn-reply reply" data-id="{{$comment->id}}"><i class="fa fa-reply" aria-hidden="true"></i>Balas</a>
+                    <a href="" class="btn btn-reply cancel" style="display: none;" ><i class="fa fa-trash" aria-hidden="true"></i>Batal</a>
                 </div>
                 @endif
             </div>
@@ -24,5 +24,5 @@
     </div>
     @include('frontend.pages.comment', ['comments' => $comment->replies, 'depth' => $dep])
 
-</div>    
+</div>
 @endforeach

@@ -1,5 +1,5 @@
 @extends('frontend.layouts.master')
-@section('title','Cart Page')
+@section('title','Halaman keranjang')
 @section('main-content')
 	<!-- Breadcrumbs -->
 	<div class="breadcrumbs">
@@ -8,8 +8,8 @@
 				<div class="col-12">
 					<div class="bread-inner">
 						<ul class="bread-list">
-							<li><a href="{{('home')}}">Home<i class="ti-arrow-right"></i></a></li>
-							<li class="active"><a href="">Cart</a></li>
+							<li><a href="{{('home')}}">Beranda<i class="ti-arrow-right"></i></a></li>
+							<li class="active"><a href="">Keranjang</a></li>
 						</ul>
 					</div>
 				</div>
@@ -27,12 +27,12 @@
 					<table class="table shopping-summery">
 						<thead>
 							<tr class="main-hading">
-								<th>PRODUCT</th>
-								<th>NAME</th>
-								<th class="text-center">UNIT PRICE</th>
-								<th class="text-center">QUANTITY</th>
-								<th class="text-center">TOTAL</th>
-								<th class="text-center"><i class="ti-trash remove-icon"></i></th>
+                                <th>PRODUK</th>
+                                <th>NAMA</th>
+                                <th class="text-center">HARGA SATUAN</th>
+                                <th class="text-center">JUMLAH</th>
+                                <th class="text-center">TOTAL</th>
+                                <th class="text-center"><i class="ti-trash remove-icon"></i></th>
 							</tr>
 						</thead>
 						<tbody id="cart_item_list">
@@ -49,7 +49,7 @@
 												<p class="product-name"><a href="{{route('product-detail',$cart->product['slug'])}}" target="_blank">{{$cart->product['title']}}</a></p>
 												<p class="product-des">{!!($cart['summary']) !!}</p>
 											</td>
-											<td class="price" data-title="Price"><span>${{number_format($cart['price'],2)}}</span></td>
+											<td class="price" data-title="Price"><span>{{format_rupiah($cart['price'])}}</span></td>
 											<td class="qty" data-title="Qty"><!-- Input Order -->
 												<div class="input-group">
 													<div class="button minus">
@@ -67,7 +67,7 @@
 												</div>
 												<!--/ End Input Order -->
 											</td>
-											<td class="total-amount cart_single_price" data-title="Total"><span class="money">${{$cart['amount']}}</span></td>
+											<td class="total-amount cart_single_price" data-title="Total"><span class="money">{{format_rupiah($cart['amount'])}}</span></td>
 
 											<td class="action" data-title="Remove"><a href="{{route('cart-delete',$cart->id)}}"><i class="ti-trash remove-icon"></i></a></td>
 										</tr>
@@ -79,13 +79,13 @@
 										<td></td>
 										<td></td>
 										<td class="float-right">
-											<button class="btn float-right" type="submit">Update</button>
+											<button class="btn float-right" type="submit">Perbarui</button>
 										</td>
 									</track>
 								@else
 										<tr>
 											<td class="text-center">
-												There are no any carts available. <a href="{{route('product-grids')}}" style="color:blue;">Continue shopping</a>
+                                                Tidak ada produk di dalam keranjang.<a href="{{route('product-grids')}}" style="color:blue;">Lanjut Belanja</a>
 
 											</td>
 										</tr>
@@ -107,8 +107,8 @@
 									<div class="coupon">
 									<form action="{{route('coupon-store')}}" method="POST">
 											@csrf
-											<input name="code" placeholder="Enter Your Coupon">
-											<button class="btn">Apply</button>
+											<input name="code" placeholder="Masukkan Kupon Anda">
+											<button class="btn">Terapkan</button>
 										</form>
 									</div>
 									{{-- <div class="checkbox">`
@@ -122,10 +122,10 @@
 							<div class="col-lg-4 col-md-7 col-12">
 								<div class="right">
 									<ul>
-										<li class="order_subtotal" data-price="{{Helper::totalCartPrice()}}">Cart Subtotal<span>${{number_format(Helper::totalCartPrice(),2)}}</span></li>
+										<li class="order_subtotal" data-price="{{Helper::totalCartPrice()}}">Subtotal Keranjang<span>{{format_rupiah(Helper::totalCartPrice())}}</span></li>
 
 										@if(session()->has('coupon'))
-										<li class="coupon_price" data-price="{{Session::get('coupon')['value']}}">You Save<span>${{number_format(Session::get('coupon')['value'],2)}}</span></li>
+										<li class="coupon_price" data-price="{{Session::get('coupon')['value']}}">Anda hemat<span>{{format_rupiah(Session::get('coupon')['value'])}}</span></li>
 										@endif
 										@php
 											$total_amount=Helper::totalCartPrice();
@@ -134,14 +134,14 @@
 											}
 										@endphp
 										@if(session()->has('coupon'))
-											<li class="last" id="order_total_price">You Pay<span>${{number_format($total_amount,2)}}</span></li>
+											<li class="last" id="order_total_price">Total Bayar<span>{{format_rupiah($total_amount)}}</span></li>
 										@else
-											<li class="last" id="order_total_price">You Pay<span>${{number_format($total_amount,2)}}</span></li>
+											<li class="last" id="order_total_price">Total Bayar<span>{{format_rupiah($total_amount)}}</span></li>
 										@endif
 									</ul>
 									<div class="button5">
-										<a href="{{route('checkout')}}" class="btn">Checkout</a>
-										<a href="{{route('product-grids')}}" class="btn">Continue shopping</a>
+										<a href="{{route('checkout')}}" class="btn">Pembayaran</a>
+										<a href="{{route('product-grids')}}" class="btn">Lanjut Belanja</a>
 									</div>
 								</div>
 							</div>
@@ -162,8 +162,8 @@
 					<!-- Start Single Service -->
 					<div class="single-service">
 						<i class="ti-rocket"></i>
-						<h4>Free shiping</h4>
-						<p>Orders over $100</p>
+                        <h4>Gratis Ongkir</h4>
+                        <p>Untuk pembelian di atas Rp. 1.500.000</p>
 					</div>
 					<!-- End Single Service -->
 				</div>
@@ -171,8 +171,8 @@
 					<!-- Start Single Service -->
 					<div class="single-service">
 						<i class="ti-reload"></i>
-						<h4>Free Return</h4>
-						<p>Within 30 days returns</p>
+                        <h4>Pengembalian Gratis</h4>
+                        <p>Dalam 30 hari</p>
 					</div>
 					<!-- End Single Service -->
 				</div>
@@ -180,8 +180,8 @@
 					<!-- Start Single Service -->
 					<div class="single-service">
 						<i class="ti-lock"></i>
-						<h4>Sucure Payment</h4>
-						<p>100% secure payment</p>
+                        <h4>Pembayaran Aman</h4>
+                        <p>100% pembayaran aman</p>
 					</div>
 					<!-- End Single Service -->
 				</div>
@@ -189,8 +189,8 @@
 					<!-- Start Single Service -->
 					<div class="single-service">
 						<i class="ti-tag"></i>
-						<h4>Best Peice</h4>
-						<p>Guaranteed price</p>
+                        <h4>Harga Terbaik</h4>
+                        <p>Harga dijamin</p>
 					</div>
 					<!-- End Single Service -->
 				</div>

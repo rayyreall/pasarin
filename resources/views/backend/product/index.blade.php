@@ -9,8 +9,8 @@
          </div>
      </div>
     <div class="card-header py-3">
-      <h6 class="m-0 font-weight-bold text-primary float-left">Product Lists</h6>
-      <a href="{{route('product.create')}}" class="btn btn-primary btn-sm float-right" data-toggle="tooltip" data-placement="bottom" title="Add User"><i class="fas fa-plus"></i> Add Product</a>
+      <h6 class="m-0 font-weight-bold text-primary float-left">Daftar Produk</h6>
+      <a href="{{route('product.create')}}" class="btn btn-primary btn-sm float-right" data-toggle="tooltip" data-placement="bottom" title="Add User"><i class="fas fa-plus"></i> Tambah Produk</a>
     </div>
     <div class="card-body">
       <div class="table-responsive">
@@ -18,36 +18,36 @@
         <table class="table table-bordered" id="product-dataTable" width="100%" cellspacing="0">
           <thead>
             <tr>
-              <th>S.N.</th>
-              <th>Title</th>
-              <th>Category</th>
-              <th>Is Featured</th>
-              <th>Price</th>
-              <th>Discount</th>
-              <th>Size</th>
-              <th>Condition</th>
-              <th>Brand</th>
-              <th>Stock</th>
-              <th>Photo</th>
-              <th>Status</th>
-              <th>Action</th>
+                <th>No</th>
+                <th>Judul</th>
+                <th>Kategori</th>
+                <th>Unggulan</th>
+                <th>Harga</th>
+                <th>Diskon</th>
+                <th>Ukuran</th>
+                <th>Kondisi</th>
+                <th>Merek</th>
+                <th>Stok</th>
+                <th>Foto</th>
+                <th>Status</th>
+                <th>Aksi</th>
             </tr>
           </thead>
           <tfoot>
             <tr>
-              <th>S.N.</th>
-              <th>Title</th>
-              <th>Category</th>
-              <th>Is Featured</th>
-              <th>Price</th>
-              <th>Discount</th>
-              <th>Size</th>
-              <th>Condition</th>
-              <th>Brand</th>
-              <th>Stock</th>
-              <th>Photo</th>
-              <th>Status</th>
-              <th>Action</th>
+                <th>No</th>
+                <th>Judul</th>
+                <th>Kategori</th>
+                <th>Unggulan</th>
+                <th>Harga</th>
+                <th>Diskon</th>
+                <th>Ukuran</th>
+                <th>Kondisi</th>
+                <th>Merek</th>
+                <th>Stok</th>
+                <th>Foto</th>
+                <th>Status</th>
+                <th>Aksi</th>
             </tr>
           </tfoot>
           <tbody>
@@ -66,9 +66,9 @@
                           {{$product->sub_cat_info->title ?? ''}}
                       </sub>
                     </td>
-                    <td>{{(($product->is_featured==1)? 'Yes': 'No')}}</td>
-                    <td>Rs. {{$product->price}} /-</td>
-                    <td>  {{$product->discount}}% OFF</td>
+                    <td>{{(($product->is_featured==1)? 'Ya': 'Tidak')}}</td>
+                    <td>Rp. {{$product->price}} /-</td>
+                    <td>  {{$product->discount}}% Diskon</td>
                     <td>{{$product->size}}</td>
                     <td>{{$product->condition}}</td>
                     <td> {{ucfirst($product->brand->title)}}</td>
@@ -92,9 +92,9 @@
                     </td>
                     <td>
                         @if($product->status=='active')
-                            <span class="badge badge-success">{{$product->status}}</span>
+                            <span class="badge badge-success">Aktif</span>
                         @else
-                            <span class="badge badge-warning">{{$product->status}}</span>
+                            <span class="badge badge-warning">Tidak Aktif</span>
                         @endif
                     </td>
                     <td>
@@ -102,7 +102,7 @@
                     <form method="POST" action="{{route('product.destroy',[$product->id])}}">
                       @csrf
                       @method('delete')
-                          <button class="btn btn-danger btn-sm dltBtn" data-id={{$product->id}} style="height:30px; width:30px;border-radius:50%" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="fas fa-trash-alt"></i></button>
+                          <button class="btn btn-danger btn-sm dltBtn" data-id={{$product->id}} style="height:30px; width:30px;border-radius:50%" data-toggle="tooltip" data-placement="bottom" title="Hapus"><i class="fas fa-trash-alt"></i></button>
                         </form>
                     </td>
                 </tr>
@@ -111,7 +111,7 @@
         </table>
         <span style="float:right">{{$products->links()}}</span>
         @else
-          <h6 class="text-center">No Products found!!! Please create Product</h6>
+          <h6 class="text-center">Produk tidak ditemukan! Silakan tambahkan produk baru.</h6>
         @endif
       </div>
     </div>
@@ -175,8 +175,8 @@
               // alert(dataID);
               e.preventDefault();
               swal({
-                    title: "Are you sure?",
-                    text: "Once deleted, you will not be able to recover this data!",
+                  title: "Apakah Anda yakin?",
+                  text: "Data yang dihapus tidak dapat dikembalikan!",
                     icon: "warning",
                     buttons: true,
                     dangerMode: true,
@@ -185,7 +185,7 @@
                     if (willDelete) {
                        form.submit();
                     } else {
-                        swal("Your data is safe!");
+                        swal("Data Anda aman!");
                     }
                 });
           })

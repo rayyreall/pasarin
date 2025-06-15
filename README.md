@@ -4,67 +4,59 @@
 [![license](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://choosealicense.com/licenses/mit/)
 [![Buy Me A Coffee](https://img.shields.io/badge/Support-Buy%20Me%20A%20Coffee-yellow?style=flat-square&logo=buy-me-a-coffee)](https://buymeacoffee.com/prajwalrai/support-my-work-complete-laravel-e-commerce-project)
 
-# 🚀 Complete E-commerce Website in Laravel 10
-A full-fledged **eCommerce solution** built on **Laravel 10**, featuring a modern UI, powerful admin panel, seamless payment integration, and a user-friendly shopping experience.
+# 🚀 Proyek Website E-Commerce Pasarin dengan Laravel
+Proyek ini adalah sistem toko online lengkap berbasis Laravel 10. Sudah termasuk panel admin, sistem pembayaran, dan fitur belanja modern untuk pengguna.
 
 ---
 
-## 🎥 Live Demo & Tutorials
-🔹 **Setup Video:** [Watch Here](https://www.youtube.com/watch?v=URX5D1A5XQ4&t=19s)
-🔹 **Demo Video:** [Live Demo](https://youtu.be/RxyrQQ3oTIE?si=Iq25IuJ8_eB5OJpC)
-🔹 **Complete Tutorial Series:** [Watch Now](https://www.youtube.com/watch?v=FdAMucaks64&list=PLIFG3IUe1Zxo8Zvju3_kJJvoKSaIP_SC_&index=1&t=44s)
+## 🌟 Fitur yang Tersedia
+
+### 🔹 **Untuk Pengunjung / Pembeli**
+- ⚡ **Dukungan PWA (Progressive Web App)**
+- 🎨 **Desain modern & responsif**
+- 🛒 **Keranjang belanja, wishlist, & pelacakan pesanan**
+- 🔎 **SEO-friendly**
+- 💳 **Pembayaran melalui Transfer Bank**
+- 💬 **Komentar & review produk**
+
+### 🔹 **Untuk Admin**
+- 🎛️ **Manajemen role (admin/user)**
+- 📊 **Statistik penjualan & laporan**
+- 🛍️ **Manajemen produk & pesanan**
+- 🔔 **Notifikasi langsung**
+- 🏷️ **Kupon & diskon**
+- 📰 **Blog & kategori**
+- 📸 **Upload banner dan media**
+
+### 🔹 **Untuk Pengguna Terdaftar**
+- 📦 **Lihat riwayat dan status pesanan**
+- 💬 **Tulis review produk**
+- 🔧 **Ubah profil dan data diri**
 
 ---
 
-## 🌟 Features
+## 🛠️ Panduan Instalasi
 
-### 🔹 **Frontend**
-- ⚡ **Progressive Web App (PWA) support**
-- 🎨 **Modern & responsive design**
-- 🛒 **Shopping cart, wishlist, and order tracking**
-- 🔎 **SEO-friendly URLs & metadata**
-- 💳 **Integrated PayPal payment gateway**
-- 📢 **Social login (Google, Facebook, Github)**
-- 💬 **Multi-level comments & reviews**
-
-### 🔹 **Admin Dashboard**
-- 🎛️ **Role management**
-- 📊 **Advanced analytics & reporting**
-- 🛍️ **Product & order management**
-- 🔔 **Real-time notifications & messaging**
-- 🏷️ **Coupon & discount system**
-- 📰 **Blog & category management**
-- 📸 **Media & banner manager**
-
-### 🔹 **User Dashboard**
-- 📦 **Order history & tracking**
-- 💬 **Review & comment system**
-- 🔧 **Profile customization**
-
----
-
-## 🛠️ Installation Guide
-
-### 🔹 **Step 1: Clone the Repository**
+### 🔹 **Step 1: Clone proyek ini**
 ```sh
-git clone https://github.com/Prajwal100/Complete-Ecommerce-in-laravel-10.git
-cd Complete-Ecommerce-in-laravel-10
+git clone https://github.com/rayyreall/pasarin
+cd pasarin
 ```
 
-### 🔹 **Step 2: Install Dependencies**
+### 🔹 **Step 2: Install Dependency**
 ```sh
 composer install
 npm install
 ```
 
-### 🔹 **Step 3: Environment Setup**
+### 🔹 **Step 3: Atur File .env**
 ```sh
 cp .env.example .env
 php artisan key:generate
 ```
-Update `.env` with database credentials.
+Jangan lupa isi data database di `.env`
 
-### 🔹 **Step 4: Database Configuration**
+### 🔹 **Step 4: Database**
 ```sh
 php artisan migrate --seed
 ```
@@ -128,4 +120,3 @@ If you find this project helpful, consider [buying me a coffee](https://buymeaco
 🔹 This project is **MIT Licensed** – Feel free to use & modify!
 
 ⭐ **If you find this project helpful, don't forget to star it!** ⭐
-

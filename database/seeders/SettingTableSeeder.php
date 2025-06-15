@@ -13,16 +13,16 @@ class SettingTableSeeder extends Seeder
      */
     public function run()
     {
-        $data=array(
-            'description'=>"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis unde sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis unde omnis iste natus error sit voluptatem Excepteu
+        $data = array(
+            'description' => "Kami berkomitmen untuk memberikan pelayanan terbaik kepada pelanggan. Semua produk yang kami tawarkan telah melalui proses kurasi yang ketat untuk memastikan kualitas. Kami percaya bahwa belanja seharusnya menjadi pengalaman yang mudah, menyenangkan, dan dapat diandalkan. Kepuasan Anda adalah prioritas utama kami.",
 
-                            sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspi deserunt mollit anim id est laborum. sed ut perspi.",
-            'short_des'=>"Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.",
-            'photo'=>"image.jpg",
-            'logo'=>'logo.jpg',
-            'address'=>"NO. 342 - London Oxford Street, 012 United Kingdom",
-            'email'=>"eshop@gmail.com",
-            'phone'=>"+060 (800) 801-582",
+            'short_des' => "Temukan berbagai produk pilihan dengan kualitas terbaik dan harga terjangkau. Belanja kini jadi lebih mudah dan aman bersama kami.",
+
+            'photo' => "image.jpg",
+            'logo' => "logo.jpg",
+            'address' => "Jl. A. Yani Km. 33,5, Loktabat Selatan, Banjarbaru, Kalimantan Selatan",
+            'email' => "via@gmail.com",
+            'phone' => "+62 831-3729-0566",
         );
         DB::table('settings')->insert($data);
     }

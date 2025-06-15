@@ -14,6 +14,8 @@ return [
     */
 
     'name' => env('APP_NAME', 'Laravel'),
+    'author' => env('APP_AUTHOR', 'Developer'),
+    'author_link' => env('APP_AUTHOR_LINK', 'username'),
 
     /*
     |--------------------------------------------------------------------------
@@ -168,6 +170,7 @@ return [
         Barryvdh\DomPDF\ServiceProvider::class,
         Srmklive\PayPal\Providers\PayPalServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
+
         /*
          * Package Service Providers...
          */

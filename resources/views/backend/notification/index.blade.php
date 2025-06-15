@@ -1,5 +1,5 @@
 @extends('backend.layouts.master')
-@section('title','E-SHOP || All Notifications')
+@section('title', config('app.name') . ' || Semua Notifikasi')
 @section('main-content')
 <div class="card">
     <div class="row">
@@ -7,16 +7,16 @@
            @include('backend.layouts.notification')
         </div>
     </div>
-  <h5 class="card-header">Notifications</h5>
+  <h5 class="card-header">Daftar Notifikasi</h5>
   <div class="card-body">
     @if(count(Auth::user()->Notifications)>0)
     <table class="table  table-hover admin-table" id="notification-dataTable">
       <thead>
         <tr>
           <th scope="col">#</th>
-          <th scope="col">Time</th>
-          <th scope="col">Title</th>
-          <th scope="col">Action</th>
+          <th scope="col">Waktu</th>
+          <th scope="col">Judul</th>
+          <th scope="col">Aksi</th>
         </tr>
       </thead>
       <tbody>
@@ -31,7 +31,7 @@
             <form method="POST" action="{{ route('notification.delete', $notification->id) }}">
               @csrf
               @method('delete')
-                  <button class="btn btn-danger btn-sm dltBtn" data-id={{$notification->id}} style="height:30px; width:30px;border-radius:50%" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="fas fa-trash-alt"></i></button>
+                  <button class="btn btn-danger btn-sm dltBtn" data-id={{$notification->id}} style="height:30px; width:30px;border-radius:50%" data-toggle="tooltip" data-placement="bottom" title="Hapus"><i class="fas fa-trash-alt"></i></button>
             </form>
           </td>
         </tr>
@@ -40,7 +40,7 @@
       </tbody>
     </table>
     @else
-      <h2>Notifications Empty!</h2>
+      <h2>Tidak ada notifikasi.</h2>
     @endif
   </div>
 </div>
@@ -87,8 +87,8 @@
             // alert(dataID);
             e.preventDefault();
             swal({
-                  title: "Are you sure?",
-                  text: "Once deleted, you will not be able to recover this data!",
+                  title: "Yakin ingin menghapus?",
+                  text: "Setelah dihapus, notifikasi ini tidak dapat dikembalikan!",
                   icon: "warning",
                   buttons: true,
                   dangerMode: true,
@@ -97,7 +97,7 @@
                   if (willDelete) {
                     form.submit();
                   } else {
-                      swal("Your data is safe!");
+                      swal("Data Anda aman.");
                   }
               });
         })

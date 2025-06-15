@@ -4,19 +4,17 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateShippingsTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
-     *
-     * @return void
      */
-    public function up()
+    public function up(): void
     {
-        Schema::create('shippings', function (Blueprint $table) {
+        Schema::create('post_categories', function (Blueprint $table) {
             $table->id();
-            $table->string('type');
-            $table->decimal('price');
+            $table->string('title');
+            $table->string('slug')->unique();
             $table->enum('status',['active','inactive'])->default('active');
             $table->timestamps();
         });
@@ -24,11 +22,9 @@ class CreateShippingsTable extends Migration
 
     /**
      * Reverse the migrations.
-     *
-     * @return void
      */
-    public function down()
+    public function down(): void
     {
-        Schema::dropIfExists('shippings');
+        Schema::dropIfExists('post_categories');
     }
-}
+};

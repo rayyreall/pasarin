@@ -1,5 +1,5 @@
-@extends('frontend.layouts.master')
-@section('title','Wishlist Page')
+ @extends('frontend.layouts.master')
+@section('title','Halaman Wishlist')
 @section('main-content')
 	<!-- Breadcrumbs -->
 	<div class="breadcrumbs">
@@ -8,7 +8,7 @@
 				<div class="col-12">
 					<div class="bread-inner">
 						<ul class="bread-list">
-							<li><a href="{{('home')}}">Home<i class="ti-arrow-right"></i></a></li>
+							<li><a href="{{('home')}}">Beranda<i class="ti-arrow-right"></i></a></li>
 							<li class="active"><a href="javascript:void(0);">Wishlist</a></li>
 						</ul>
 					</div>
@@ -17,7 +17,7 @@
 		</div>
 	</div>
 	<!-- End Breadcrumbs -->
-			
+
 	<!-- Shopping Cart -->
 	<div class="shopping-cart section">
 		<div class="container">
@@ -28,9 +28,9 @@
 						<thead>
 							<tr class="main-hading">
 								<th>PRODUCT</th>
-								<th>NAME</th>
-								<th class="text-center">TOTAL</th> 
-								<th class="text-center">ADD TO CART</th> 
+								<th>NAMA</th>
+								<th class="text-center">TOTAL</th>
+								<th class="text-center">TAMBAH KE KERANJANG</th>
 								<th class="text-center"><i class="ti-trash remove-icon"></i></th>
 							</tr>
 						</thead>
@@ -38,7 +38,7 @@
 							@if(Helper::getAllProductFromWishlist())
 								@foreach(Helper::getAllProductFromWishlist() as $key=>$wishlist)
 									<tr>
-										@php 
+										@php
 											$photo=explode(',',$wishlist->product['photo']);
 										@endphp
 										<td class="image" data-title="No"><img src="{{$photo[0]}}" alt="{{$photo[0]}}"></td>
@@ -51,10 +51,10 @@
 										<td class="action" data-title="Remove"><a href="{{route('wishlist-delete',$wishlist->id)}}"><i class="ti-trash remove-icon"></i></a></td>
 									</tr>
 								@endforeach
-							@else 
+							@else
 								<tr>
 									<td class="text-center">
-										There are no any wishlist available. <a href="{{route('product-grids')}}" style="color:blue;">Continue shopping</a>
+                                        Tidak ada wishlist saat ini. <a href="{{route('product-grids')}}" style="color:blue;">Lanjutkan belanja</a>
 
 									</td>
 								</tr>
@@ -69,7 +69,7 @@
 		</div>
 	</div>
 	<!--/ End Shopping Cart -->
-			
+
 	<!-- Start Shop Services Area  -->
 	<section class="shop-services section">
 		<div class="container">
@@ -78,8 +78,8 @@
 					<!-- Start Single Service -->
 					<div class="single-service">
 						<i class="ti-rocket"></i>
-						<h4>Free shiping</h4>
-						<p>Orders over $100</p>
+                        <h4>Pengiriman Gratis</h4>
+                        <p>Untuk pesanan di atas Rp1.500.000</p>
 					</div>
 					<!-- End Single Service -->
 				</div>
@@ -87,8 +87,8 @@
 					<!-- Start Single Service -->
 					<div class="single-service">
 						<i class="ti-reload"></i>
-						<h4>Free Return</h4>
-						<p>Within 30 days returns</p>
+                        <h4>Pengembalian Gratis</h4>
+                        <p>Dalam 30 hari</p>
 					</div>
 					<!-- End Single Service -->
 				</div>
@@ -96,8 +96,8 @@
 					<!-- Start Single Service -->
 					<div class="single-service">
 						<i class="ti-lock"></i>
-						<h4>Sucure Payment</h4>
-						<p>100% secure payment</p>
+                        <h4>Pembayaran Aman</h4>
+                        <p>100% aman dan terpercaya</p>
 					</div>
 					<!-- End Single Service -->
 				</div>
@@ -105,8 +105,8 @@
 					<!-- Start Single Service -->
 					<div class="single-service">
 						<i class="ti-tag"></i>
-						<h4>Best Peice</h4>
-						<p>Guaranteed price</p>
+                        <h4>Harga Terbaik</h4>
+                        <p>Dijamin termurah</p>
 					</div>
 					<!-- End Single Service -->
 				</div>
@@ -114,11 +114,11 @@
 		</div>
 	</section>
 	<!-- End Shop Newsletter -->
-	
+
 	@include('frontend.layouts.newsletter')
-	
-	
-	
+
+
+
 	<!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
@@ -160,20 +160,20 @@
                                                 <i class="yellow fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
                                             </div>
-                                            <a href="#"> (1 customer review)</a>
+                                            <a href="#"> (1 ulasan pelanggan)</a>
                                         </div>
                                         <div class="quickview-stock">
-                                            <span><i class="fa fa-check-circle-o"></i> in stock</span>
+                                            <span><i class="fa fa-check-circle-o"></i> Tersedia</span>
                                         </div>
                                     </div>
-                                    <h3>$29.00</h3>
+                                    <h3>Rp430.000</h3>
                                     <div class="quickview-peragraph">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia iste laborum ad impedit pariatur esse optio tempora sint ullam autem deleniti nam in quos qui nemo ipsum numquam.</p>
+                                        <p>Gaun elegan dengan potongan flare cocok untuk acara formal dan santai. Terbuat dari bahan lembut dan nyaman dipakai sepanjang hari.</p>
                                     </div>
 									<div class="size">
 										<div class="row">
 											<div class="col-lg-6 col-12">
-												<h5 class="title">Size</h5>
+												<h5 class="title">Ukuran</h5>
 												<select>
 													<option selected="selected">s</option>
 													<option>m</option>
@@ -182,12 +182,12 @@
 												</select>
 											</div>
 											<div class="col-lg-6 col-12">
-												<h5 class="title">Color</h5>
+												<h5 class="title">Warna</h5>
 												<select>
-													<option selected="selected">orange</option>
-													<option>purple</option>
-													<option>black</option>
-													<option>pink</option>
+                                                    <option selected="selected">Oranye</option>
+                                                    <option>Ungu</option>
+                                                    <option>Hitam</option>
+                                                    <option>Merah Muda</option>
 												</select>
 											</div>
 										</div>
@@ -210,12 +210,12 @@
 										<!--/ End Input Order -->
 									</div>
 									<div class="add-to-cart">
-										<a href="#" class="btn">Add to cart</a>
+										<a href="#" class="btn">Tambah Ke Keranjang</a>
 										<a href="#" class="btn min"><i class="ti-heart"></i></a>
 										<a href="#" class="btn min"><i class="fa fa-compress"></i></a>
 									</div>
                                     <div class="default-social">
-										<h4 class="share-now">Share:</h4>
+										<h4 class="share-now">Bagikan:</h4>
                                         <ul>
                                             <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
                                             <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
@@ -231,7 +231,7 @@
             </div>
         </div>
         <!-- Modal end -->
-	
+
 @endsection
 @push('scripts')
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>

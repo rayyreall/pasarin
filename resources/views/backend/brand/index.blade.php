@@ -1,5 +1,5 @@
 @extends('backend.layouts.master')
-@section('title','E-SHOP || Brand Page')
+@section('title', config('page.name') .' || Halaman Merek')
 @section('main-content')
  <!-- DataTales Example -->
  <div class="card shadow mb-4">
@@ -9,8 +9,8 @@
          </div>
      </div>
     <div class="card-header py-3">
-      <h6 class="m-0 font-weight-bold text-primary float-left">Brand List</h6>
-      <a href="{{route('brand.create')}}" class="btn btn-primary btn-sm float-right" data-toggle="tooltip" data-placement="bottom" title="Add User"><i class="fas fa-plus"></i> Add Brand</a>
+      <h6 class="m-0 font-weight-bold text-primary float-left">Daftar Merek</h6>
+      <a href="{{route('brand.create')}}" class="btn btn-primary btn-sm float-right" data-toggle="tooltip" data-placement="bottom" title="Add User"><i class="fas fa-plus"></i> Tambah Merek</a>
     </div>
     <div class="card-body">
       <div class="table-responsive">
@@ -18,24 +18,24 @@
         <table class="table table-bordered" id="banner-dataTable" width="100%" cellspacing="0">
           <thead>
             <tr>
-              <th>S.N.</th>
-              <th>Title</th>
-              <th>Slug</th>
-              <th>Status</th>
-              <th>Action</th>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Slug</th>
+                <th>Status</th>
+                <th>Aksi</th>
             </tr>
           </thead>
           <tfoot>
             <tr>
-              <th>S.N.</th>
-              <th>Title</th>
-              <th>Slug</th>
-              <th>Status</th>
-              <th>Action</th>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Slug</th>
+                <th>Status</th>
+                <th>Aksi</th>
               </tr>
           </tfoot>
           <tbody>
-            @foreach($brands as $brand)   
+            @foreach($brands as $brand)
                 <tr>
                     <td>{{$brand->id}}</td>
                     <td>{{$brand->title}}</td>
@@ -48,11 +48,11 @@
                         @endif
                     </td>
                     <td>
-                        <a href="{{route('brand.edit',$brand->id)}}" class="btn btn-primary btn-sm float-left mr-1" style="height:30px; width:30px;border-radius:50%" data-toggle="tooltip" title="edit" data-placement="bottom"><i class="fas fa-edit"></i></a>
+                        <a href="{{route('brand.edit',$brand->id)}}" class="btn btn-primary btn-sm float-left mr-1" style="height:30px; width:30px;border-radius:50%" data-toggle="tooltip" title="ubah" data-placement="bottom"><i class="fas fa-edit"></i></a>
                         <form method="POST" action="{{route('brand.destroy',[$brand->id])}}">
-                          @csrf 
+                          @csrf
                           @method('delete')
-                              <button class="btn btn-danger btn-sm dltBtn" data-id={{$brand->id}} style="height:30px; width:30px;border-radius:50%" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="fas fa-trash-alt"></i></button>
+                              <button class="btn btn-danger btn-sm dltBtn" data-id={{$brand->id}} style="height:30px; width:30px;border-radius:50%" data-toggle="tooltip" data-placement="bottom" title="Hapus"><i class="fas fa-trash-alt"></i></button>
                         </form>
                     </td>
                     {{-- Delete Modal --}}
@@ -67,7 +67,7 @@
                             </div>
                             <div class="modal-body">
                               <form method="post" action="{{ route('banners.destroy',$user->id) }}">
-                                @csrf 
+                                @csrf
                                 @method('delete')
                                 <button type="submit" class="btn btn-danger" style="margin:auto; text-align:center">Parmanent delete user</button>
                               </form>
@@ -75,13 +75,13 @@
                           </div>
                         </div>
                     </div> --}}
-                </tr>  
+                </tr>
             @endforeach
           </tbody>
         </table>
         <span style="float:right">{{$brands->links()}}</span>
         @else
-          <h6 class="text-center">No brands found!!! Please create brand</h6>
+          <h6 class="text-center">Tidak ada merek ditemukan. Silakan tambahkan merek baru.</h6>
         @endif
       </div>
     </div>
@@ -115,7 +115,7 @@
   <!-- Page level custom scripts -->
   <script src="{{asset('backend/js/demo/datatables-demo.js')}}"></script>
   <script>
-      
+
       $('#banner-dataTable').DataTable( {
             "columnDefs":[
                 {
@@ -128,7 +128,7 @@
         // Sweet alert
 
         function deleteData(id){
-            
+
         }
   </script>
   <script>
@@ -144,8 +144,8 @@
               // alert(dataID);
               e.preventDefault();
               swal({
-                    title: "Are you sure?",
-                    text: "Once deleted, you will not be able to recover this data!",
+                  title: "Apakah Anda yakin?",
+                  text: "Data yang dihapus tidak dapat dikembalikan!",
                     icon: "warning",
                     buttons: true,
                     dangerMode: true,
@@ -154,7 +154,7 @@
                     if (willDelete) {
                        form.submit();
                     } else {
-                        swal("Your data is safe!");
+                        swal("Data Anda aman!");
                     }
                 });
           })
