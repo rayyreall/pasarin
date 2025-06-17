@@ -100,7 +100,7 @@
     </div>
     <div class="invoice-right-top float-right" class="text-right">
       <h3>Faktur #{{$order->order_number}}</h3>
-      <p>{{ format_tanggal_indo($order->created_at) }}</p>
+      <p>{{ format_date_indo($order->created_at) }}</p>
       {{-- <img class="img-responsive" src="data:image/png;base64, {{ base64_encode(QrCode::format('png')->size(150)->generate(route('admin.product.order.show', $order->id )))}}"> --}}
     </div>
     <div class="clearfix"></div>

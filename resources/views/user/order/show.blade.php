@@ -78,7 +78,7 @@
                                         </tr>
                                         <tr>
                                             <td>Biaya Pengiriman</td>
-                                            <td> : ${{$order->shipping->price}}</td>
+                                            <td> : {{format_rupiah($order->shipping->price)}}</td>
                                         </tr>
                                         <tr>
                                             <td>Total</td>

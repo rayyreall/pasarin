@@ -29,8 +29,8 @@
             <td>{{$order->first_name}} {{$order->last_name}}</td>
             <td>{{$order->email}}</td>
             <td>{{$order->quantity}}</td>
-            <td>{{ formatRupiah($order->shipping->price) }}</td>
-            <td>{{ formatRupiah($order->total_amount) }}</td>
+            <td>{{ format_rupiah($order->shipping->price) }}</td>
+            <td>{{ format_rupiah($order->total_amount) }}</td>
             <td>
                 @if($order->status=='new')
                   <span class="badge badge-primary">Baru</span>
@@ -68,7 +68,7 @@
                     </tr>
                     <tr>
                         <td>Tanggal Pemesanan</td>
-                        <td> : {{ format_tanggal_indo($order->created_at) }} pukul {{ $order->created_at->format('H:i') }}</td>
+                        <td> : {{ format_date_indo($order->created_at) }} pukul {{ $order->created_at->format('H:i') }}</td>
                     </tr>
                     <tr>
                         <td>Jumlah Barang</td>
@@ -80,15 +80,15 @@
                     </tr>
                     <tr>
                         <td>Ongkos Kirim</td>
-                        <td> : {{ formatRupiah($order->shipping->price) }}</td>
+                        <td> : {{ format_rupiah($order->shipping->price) }}</td>
                     </tr>
                     <tr>
                       <td>Kupon</td>
-                      <td> : {{ formatRupiah($order->coupon) }}</td>
+                      <td> : {{ format_rupiah($order->coupon) }}</td>
                     </tr>
                     <tr>
                         <td>Total Pembayaran</td>
-                        <td> : {{ formatRupiah($order->total_amount) }}</td>
+                        <td> : {{ format_rupiah($order->total_amount) }}</td>
                     </tr>
                     <tr>
                         <td>Metode Pembayaran</td>

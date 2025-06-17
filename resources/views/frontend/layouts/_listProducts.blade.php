@@ -1,6 +1,7 @@
  <!-- Start Single Tab -->
  <div class="tab-pane fade show active" id="man" role="tabpanel">
-    <div class="tab-single">
+
+     <div class="tab-single">
         <div class="row">
             <div class="col-xl-3 col-lg-4 col-md-4 col-12">
                 <div class="single-product">
@@ -49,7 +50,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Awesome Pink Show</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -75,7 +76,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -102,7 +103,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Women Pant Collectons</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -128,7 +129,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -155,7 +156,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Awesome Cap For Women</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -181,7 +182,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Polo Dress For Women</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -208,8 +209,8 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Black Sunglass For Women</a></h3>
                         <div class="product-price">
-                            <span class="old">$60.00</span>
-                            <span>$50.00</span>
+                            <span class="old">Rp.  321.000</span>
+                            <span>Rp.  121.000</span>
                         </div>
                     </div>
                 </div>
@@ -243,7 +244,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Women Hot Collection</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -269,7 +270,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Awesome Pink Show</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -295,7 +296,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -322,7 +323,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Women Pant Collectons</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -348,7 +349,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -375,7 +376,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Awesome Cap For Women</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -401,7 +402,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Polo Dress For Women</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -428,8 +429,8 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Black Sunglass For Women</a></h3>
                         <div class="product-price">
-                            <span class="old">$60.00</span>
-                            <span>$50.00</span>
+                            <span class="old">Rp.  249.000.00</span>
+                            <span>Rp.  211.000.00</span>
                         </div>
                     </div>
                 </div>
@@ -463,7 +464,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Women Hot Collection</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -489,7 +490,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Awesome Pink Show</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -515,7 +516,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -542,7 +543,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Women Pant Collectons</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -568,7 +569,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -595,7 +596,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Awesome Cap For Women</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -621,7 +622,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Polo Dress For Women</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -648,8 +649,8 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Black Sunglass For Women</a></h3>
                         <div class="product-price">
-                            <span class="old">$60.00</span>
-                            <span>$50.00</span>
+                            <span class="old">Rp.  249.000.00</span>
+                            <span>Rp.  211.000.00</span>
                         </div>
                     </div>
                 </div>
@@ -683,7 +684,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Women Hot Collection</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -709,7 +710,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Awesome Pink Show</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -735,7 +736,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -762,7 +763,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Women Pant Collectons</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -788,7 +789,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -815,7 +816,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Awesome Cap For Women</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -841,7 +842,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Polo Dress For Women</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -868,8 +869,8 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Black Sunglass For Women</a></h3>
                         <div class="product-price">
-                            <span class="old">$60.00</span>
-                            <span>$50.00</span>
+                            <span class="old">Rp.  249.000.00</span>
+                            <span>Rp.  211.000.00</span>
                         </div>
                     </div>
                 </div>
@@ -903,7 +904,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Women Hot Collection</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -929,7 +930,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Awesome Pink Show</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -955,7 +956,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -982,7 +983,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Women Pant Collectons</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -1008,7 +1009,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -1035,7 +1036,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Awesome Cap For Women</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -1061,7 +1062,7 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Polo Dress For Women</a></h3>
                         <div class="product-price">
-                            <span>$29.00</span>
+                            <span>Rp. 149.000</span>
                         </div>
                     </div>
                 </div>
@@ -1088,8 +1089,8 @@
                     <div class="product-content">
                         <h3><a href="product-details.html">Black Sunglass For Women</a></h3>
                         <div class="product-price">
-                            <span class="old">$60.00</span>
-                            <span>$50.00</span>
+                            <span class="old">Rp.  249.000.00</span>
+                            <span>Rp.  211.000.00</span>
                         </div>
                     </div>
                 </div>
